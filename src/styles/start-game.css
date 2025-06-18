@@ -1,0 +1,33 @@
+.start-game-container {
+    position: relative;
+    display: flex;
+    align-items:stretch;
+    justify-content: center;
+}
+
+.start-game-button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    scale: 1;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: calc(100vh / 2 - 100px);
+    width: 185px;
+    height: 150px;
+    transition: 0.1s scale ease-in-out;
+}
+
+.start-game-button:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.title {
+    position: absolute;
+    margin-top: 100px;
+    width: 500px;
+}

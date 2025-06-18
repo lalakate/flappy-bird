@@ -1,0 +1,13 @@
+.background {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100vw;
+    height: 100vh;
+}

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'FlappyBird';
+    src: url('./FlappyFont.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Marker';
+    src: url('./Marker\ Felt.ttf') format('ttf');
+    font-weight: normal;
+    font-display: swap;
+}
