@@ -37,7 +37,7 @@ const App = () => {
         return () => {
             window.removeEventListener('keydown', handleKeyDown);
         };
-    }, [handleJump]);
+    }, [handleJump, gameOver]);
 
     console.log('gameOver:', gameOver);
 

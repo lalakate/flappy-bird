@@ -1,4 +1,11 @@
 import { useRef, useEffect, useState } from "react"
+import hitSound from '../src/audio/Hit.wav'
+import pointSound from '../src/audio/Point.wav'
+import wingSound from '../src/audio/Wing.wav'
+
+const hitAudio = new Audio(hitSound)
+const pointAudio = new Audio(pointSound)
+const wingAudio = new Audio(wingSound)
 
 const GameLogic = () => {
     const gravity = 0.5
@@ -32,6 +39,8 @@ const GameLogic = () => {
         }
 
         setBirdVelocity(jumpForce)
+        wingAudio.currentTime = 0
+        wingAudio.play()
     }
 
     const handleRestart = () => {
@@ -84,7 +93,7 @@ const GameLogic = () => {
     }, [gameStarted, gameOver])
 
     useEffect(() => {
-        const pipeWidth = 80; // или то значение, что вы используете для ширины пайпа
+        const pipeWidth = 80; 
         
         if (!gameStarted || gameOver) return;
         
@@ -93,6 +102,8 @@ const GameLogic = () => {
                 const newPosition = prev + birdVelocity;
                 if (newPosition >= gameHeight - 30 - groundHeight || newPosition < 0) {
                     setGameOver(true);
+                    hitAudio.currentTime = 0
+                    hitAudio.play()
                     return prev;
                 }
                 return newPosition;
@@ -111,6 +122,8 @@ const GameLogic = () => {
                         console.log(`${pipe.id}`)
                         setScore(prev => prev + 1);
                         passedPipesRef.current.add(pipe.id)
+                        pointAudio.currentTime = 0
+                        pointAudio.play()
                     }
 
                     return {
@@ -127,8 +140,6 @@ const GameLogic = () => {
 
                 const birdX = (gameWidth / 2) - (birdWidth / 2);
                 const birdY = birdPositionRef.current;
-                const gameBottom = gameHeight - groundHeight;
-
                 for (const pipe of updatedPipes) {
                     const pipeX = pipe.x;
                     const topPipeBottom = pipe.topHeight;
@@ -144,6 +155,8 @@ const GameLogic = () => {
 
                     if (collide) {
                         setGameOver(true);
+                        hitAudio.currentTime = 0
+                        hitAudio.play()
                         break;
                     }
                 }

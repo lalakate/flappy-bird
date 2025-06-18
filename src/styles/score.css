@@ -1,9 +1,11 @@
 .score {
     position: absolute;
-    font-size: 4em;
-    color: white;
-    top: 80px;
+    top: 30px;
     left: 50%;
-    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.5);
-    z-index: 15;
+    transform: translateX(-50%);
+    font-size: 3vw;
+    color: #fff;
+    font-family: 'FlappyBird', sans-serif;
+    text-shadow: 2px 2px 0 #222;
+    z-index: 20;
 }
