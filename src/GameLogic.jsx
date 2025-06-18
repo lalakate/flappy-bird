@@ -48,7 +48,6 @@ const GameLogic = () => {
         setGameOver(false)
         setBirdPosition(gameHeight / 2) 
         setBirdVelocity(0)
-        setPipes([])
         setScore(0)
         setCurrentFrame(0)
         passedPipesRef.current.clear()
