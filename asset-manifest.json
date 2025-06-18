@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/flappy-bird/static/css/main.4fcbe4d3.css",
+    "main.js": "/flappy-bird/static/js/main.38c0ab25.js",
+    "static/js/453.9262c6d2.chunk.js": "/flappy-bird/static/js/453.9262c6d2.chunk.js",
+    "static/media/background.png": "/flappy-bird/static/media/background.4ecfd9d0a15f2ecc3d5e.png",
+    "static/media/Point.wav": "/flappy-bird/static/media/Point.ff6826800920899c8974.wav",
+    "static/media/Hit.wav": "/flappy-bird/static/media/Hit.5e51d03c9567d54ce454.wav",
+    "static/media/Game-Over-Title.png": "/flappy-bird/static/media/Game-Over-Title.cc2723d2e9f359da60a2.png",
+    "static/media/PlayButton.png": "/flappy-bird/static/media/PlayButton.3e4133d7eb3eb9367277.png",
+    "static/media/Game-Over-Body.png": "/flappy-bird/static/media/Game-Over-Body.1442c3f43b163044e790.png",
+    "static/media/Wing.wav": "/flappy-bird/static/media/Wing.934e8e7d5032e39f994e.wav",
+    "static/media/title.png": "/flappy-bird/static/media/title.2818600dfcdca551f64d.png",
+    "static/media/Marker Felt.ttf": "/flappy-bird/static/media/Marker Felt.8856d16062090a3d51df.ttf",
+    "static/media/bird-01.png": "/flappy-bird/static/media/bird-01.d1e782cf81b55170f024.png",
+    "static/media/bird-03.png": "/flappy-bird/static/media/bird-03.e1f9b7808af8f2d118cc.png",
+    "static/media/bird-02.png": "/flappy-bird/static/media/bird-02.3e35c1acbc52838bc318.png",
+    "static/media/PipeUp.png": "/flappy-bird/static/media/PipeUp.52e2d0f4de61814be927.png",
+    "static/media/FlappyFont.ttf": "/flappy-bird/static/media/FlappyFont.41ab3bb3e47ae6c9d524.ttf",
+    "index.html": "/flappy-bird/index.html",
+    "main.4fcbe4d3.css.map": "/flappy-bird/static/css/main.4fcbe4d3.css.map",
+    "main.38c0ab25.js.map": "/flappy-bird/static/js/main.38c0ab25.js.map",
+    "453.9262c6d2.chunk.js.map": "/flappy-bird/static/js/453.9262c6d2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4fcbe4d3.css",
+    "static/js/main.38c0ab25.js"
+  ]
+}
